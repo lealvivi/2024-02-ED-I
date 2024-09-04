@@ -7,9 +7,10 @@ struct _ponto{
 };
 
 Ponto* Ponto_create(float x, float y) {
-    Ponto* novo = (Ponto*) malloc(sizeof(Ponto));
+    Ponto* novo = (Ponto*) malloc(sizeof(Ponto)); //cria espaco para memoria do tipo Ponto
+    //novo é um ponteiro do tipo Ponto
     if(novo!=NULL){
-        novo->x = x;
+        novo->x = x; //acessa o espaco apontado preenchendo por x
         novo->y = y;
     }
     return novo;
