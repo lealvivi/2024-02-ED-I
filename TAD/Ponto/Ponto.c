@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-struct _ponto{
-    float x, y;
+struct _ponto{ //aq esta definindo oq esta na struct .h
+    float x, y; //.h é mostrado para p usuario, .c nao, entao esconde  do usuario as informações
 };
 
 Ponto* Ponto_create(float x, float y) {
