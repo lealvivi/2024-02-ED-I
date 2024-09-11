@@ -58,6 +58,6 @@ float Ponto_dist(Ponto* p1,Ponto*p2){
     if(p1 != NULL && p2 !=NULL){
         float x = p2->x - p1 -> x;
         float y = p2->y - p1 -> y;
-        return sqrtf((x*x)+(y*y));
+        return sqrtf((x*x)+(y*y)); //para funcionar quando for rodar passar o parametro -lm no terminal para linkar com sqrtf
     }
 }
