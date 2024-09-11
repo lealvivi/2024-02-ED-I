@@ -30,16 +30,16 @@ void Ponto_print(Ponto* ponto){
     }
 }
 
-void Ponto_get_x(Ponto* ponto, float* x){
+void Ponto_get_x(Ponto* ponto, float* px){
     if(ponto!=NULL){
-        printf("coordenada x: %.2f", ponto->x);
+       *px = ponto->x;
 
     }
 }
 
-void Ponto_get_y(Ponto* ponto,float* y){
+void Ponto_get_y(Ponto* ponto,float* py){
     if(ponto!=NULL){
-         printf("coordenada y: %.2f", ponto->y);
+        *py = ponto->y;
     }
 }
 
